@@ -9,57 +9,13 @@
 
 
 </head>
-<body ng-controller="GoodsListCtrl">
+<body>
 
-<div id="filters" class="all-filters">
-    <div class="ui blue segment">
-    <span><b>Бренды:</b></span><br>
-
-    <div data-ng-repeat="good in goods">
-        <input type="checkbox" ng-checked="good.checked" ng-model="good.checked"/> {{ good.brand}}
-    </div>
-
-    <div ng-controller="PriceCtrl">
-        <span><b>Цена:</b></span><br>
-        <input type="text" placeholder="От" class="from" value="{{lower_price_bound}}">
-        <input type="text" placeholder="До" class="to" value="{{upper_price_bound}}">
-        <span><b>Размер матрицы:</b></span><br>
-        <slider floor="0" ceiling="10000" ng-model-low="lower_price_bound" ng-model-high="upper_price_bound"></slider>
-        <p>
-            <span><b>Поиск:</b></span><br>
-            <div class="circular ui button">Поиск</div>
-        </p>
-    </div>
-    </div>
-
-
-</div>
-
-<div class="catalogue">
-<div class="ui stacked segment" ng-repeat="good in goods | SelectedGoods | SelectedPrice">
-    <div>Name: {{good.title}}</div>
-    <div>Price: {{good.price}}</div>
-    <div>Brand: {{good.brand}}</div>
-    <div class="actions">
-        <a class="reply" href="#">Reply</a>
-        <a class="delete" href="#">Delete</a>
-    </div>
-</div>
-</div>
-
-<!--<div class="catalogue">
-    <ul class="phones">
-        <li ng-repeat="good in goods | SelectedGoods | SelectedPrice">
-            <span>{{good.title}}</span>
-
-            <p>{{good.price}}</p>
-        </li>
-    </ul>
-</div>-->
-
+<div ng-view></div>
 
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-slider/angular-slider.js"></script>
+<script src="bower_components/bower-angular-route-master/angular-route.js"></script>
 
 
 <script src="js/app.js"></script>
