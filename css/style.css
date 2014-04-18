@@ -1,0 +1,28 @@
+.all-filters {
+    background-color: #fc0; /* Цвет фона слоя */
+    padding: 5px; /* Поля вокруг текста */
+    float: left; /* Обтекание по правому краю */
+    width: 300px; /* Ширина слоя */
+
+}
+
+.catalogue {
+    background-color: #c0c0c0; /* Цвет фона слоя */
+    padding: 5px; /* Поля вокруг текста */
+    width: 300px; /* Ширина слоя */
+    float: left; /* Обтекание по правому краю */
+
+}
+.all-filters .from {
+    width: 100px; /* Ширина в пикселах */
+}
+
+.all-filters .to {
+    width: 100px; /* Ширина в пикселах */
+}
+
+.all-filters .button {
+    width: 200px; /* Ширина в пикселах */
+    height: 30px; /* Ширина в пикселах */
+
+}
