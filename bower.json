@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "angular-slider": "~0.1.6",
-    "angular": "1.2.16"
+    "angular": "1.2.16",
+    "semantic": "~0.15.5"
   }
 }
